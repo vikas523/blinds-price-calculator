@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>blind part calculator</title>
+    <meta charset="UTF-8" />
+    <style>
+  body {
+  font-family: sans-serif;
+  margin:0;
+  padding: 0;
+  background-image: url("./images.jpg");
+   background-repeat: no-repeat;	 
+  background-size: 1440px 770px;
+}
+#app {
+  width: 50%;
+  margin-left: 500px ;
+  margin-top: 250px;
+}
+#color {
+  margin-left: 40px;
+  width: 185px;
+}
+   
+#width {
+  margin-left: 38px;
+}
+
+#height {
+  margin-left: 33px;
+}
+
+#wrinkles {
+  margin-left: 14px;
+  width: 185px;
+}
+ 
+#headRail {
+  width: 185px;
+}
+#total {
+  margin-left: 11px;
+}
+#submitBtn{
+  padding: 8px;
+  cursor: pointer;
+}
+     
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+
+    Select Color:
+    <select id="color">
+      <option value="blue">Blue </option>
+      <option value="Ivory">Ivory </option>
+      <option value="Cream">Cream </option>
+      <option selected value="green">Green </option>
+      <option value="maple">Maple </option>
+    </select>
+    <br />
+    WIdth: <input type="number" id="width" name="width" />
+    <br />
+    Height: <input type="number" id="height" name="height" />
+    
+    <br />
+    blindParts :
+    <select id="blindPart">
+      <option value="wood">wood</option>
+      <option  selected value="bamboo">bamboo </option>
+      <option value="aluminum">aluminum </option>
+      <option value="metal">metal </option>
+    </select>
+    <br />
+    mountType :
+    <select id="mountType">
+      <option value="inside">inside </option>
+      <option selected value="outside">outside</option>
+   
+    </select>
+    <br />
+    cordType :
+    <select id="cordType">
+      <option selected value="cordless lift">cordless lift </option>
+      <option  value="continous crystal loop position right">continous crystal loop position right</option>
+      <option  value="continous crystal loop position Left">continous crystal loop position Left</option>
+    </select>
+
+    <br />
+    cassetteType :
+    <select id="cassetteType">
+      <option  value="none">none </option>
+      <option  selected value="A-type pink">A-type pink</option>
+      <option  value="A-type red">A-type red</option>
+    </select>
+    <br />
+    <button id="submitBtn">Calculate</button>
+    <br />
+    total price: <input disabled id="total" />
+  </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
